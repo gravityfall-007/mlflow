@@ -68,10 +68,7 @@ if __name__ == "__main__":
         mlflow.log_metric("mae", mae)
 
         # For Remote server only (DAGShub)
-        DAGSHUB_USERNAME = "gravityfall-007"
         REPO_NAME = "https://github.com/gravityfall-007/mlflow.git"
-        DAGSHUB_API_TOKEN = "65ebbe930b2deb2d77cd578deeb463ebd8d54ad4"
-
         #dagshub.init(username=DAGSHUB_USERNAME, repo_name=REPO_NAME, api_token=DAGSHUB_API_TOKEN)
 
         remote_server_uri = "https://dagshub.com/gravityfall-007/mlflow.mlflow"
